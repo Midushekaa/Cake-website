@@ -11,16 +11,15 @@ document.querySelector('#search').onclick = () => {
 };
 
 // Product Swiper
-var productSwiper = new Swiper(".product-row", {
+new Swiper(".product-row", {
     spaceBetween: 30,
     loop: true,
-    centeredSlides: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".product .swiper-pagination",
         clickable: true,
     },
     breakpoints: {
@@ -31,40 +30,29 @@ var productSwiper = new Swiper(".product-row", {
 });
 
 // Blogs Swiper
-var blogsSwiper = new Swiper(".blogs-row", {
+new Swiper(".blogs-row", {
     spaceBetween: 30,
     loop: true,
-    centeredSlides: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".blogs .swiper-pagination",
         clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        0: { slidesPerView: 1 },
-        768: { slidesPerView: 1 },
-        1024: { slidesPerView: 1 },
     },
 });
 
 // Review Swiper
-var reviewSwiper = new Swiper(".review-row", {
+new Swiper(".review-row", {
     spaceBetween: 30,
     loop: true,
-    centeredSlides: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".review .swiper-pagination",
         clickable: true,
     },
     breakpoints: {
