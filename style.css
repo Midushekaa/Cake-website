@@ -106,7 +106,7 @@ html::-webkit-scrollbar-thumb{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/cake.jpg) no-repeat;
+    background: url(cake.jpg) no-repeat;
     background-size: 600px 500px;
     background-position: 850px 150px;
     
